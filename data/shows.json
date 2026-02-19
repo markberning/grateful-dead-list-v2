@@ -1,0 +1,77 @@
+{
+  "shows": [
+    {
+      "date": "1965-12-04",
+      "venue": "Soquel Elementary School",
+      "city": "Soquel",
+      "state": "CA",
+      "country": "USA",
+      "notes": "Known as The Warlocks.",
+      "setlist": [
+        "I Know You Rider",
+        "Big Boss Man",
+        "Over and Over",
+        "Don't Ease Me In"
+      ]
+    },
+    {
+      "date": "1970-02-13",
+      "venue": "Fillmore East",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "notes": "Late show.",
+      "setlist": [
+        "China Cat Sunflower",
+        "I Know You Rider",
+        "Me and My Uncle",
+        "Dire Wolf",
+        "Smokestack Lightning",
+        "Dark Star",
+        "That's It for the Other One",
+        "Turn On Your Love Light"
+      ]
+    },
+    {
+      "date": "1977-05-08",
+      "venue": "Barton Hall, Cornell University",
+      "city": "Ithaca",
+      "state": "NY",
+      "country": "USA",
+      "notes": "Legendary performance.",
+      "setlist": [
+        "Minglewood Blues",
+        "Loser",
+        "El Paso",
+        "They Love Each Other",
+        "Jack Straw",
+        "Deal",
+        "Scarlet Begonias",
+        "Fire on the Mountain",
+        "Estimated Prophet",
+        "St. Stephen",
+        "Not Fade Away",
+        "Morning Dew"
+      ]
+    },
+    {
+      "date": "1989-07-07",
+      "venue": "JFK Stadium",
+      "city": "Philadelphia",
+      "state": "PA",
+      "country": "USA",
+      "notes": "Crimson, White & Indigo show.",
+      "setlist": [
+        "Hell in a Bucket",
+        "West L.A. Fadeaway",
+        "Feel Like a Stranger",
+        "Stuck Inside of Mobile",
+        "Scarlet Begonias",
+        "Fire on the Mountain",
+        "Truckin'",
+        "I Need a Miracle",
+        "Bertha"
+      ]
+    }
+  ]
+}

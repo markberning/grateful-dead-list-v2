@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grateful Dead Shows</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="kicker">Archive Index</p>
+          <h1>Grateful Dead Shows</h1>
+          <p class="subhead">
+            A searchable list of Grateful Dead performances. Filter by year or
+            search by venue, city, state, or setlist detail.
+          </p>
+        </div>
+        <div class="hero-meta">
+          <div class="stat">
+            <div class="stat-value" id="totalCount">0</div>
+            <div class="stat-label">Shows loaded</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="rangeCount">0</div>
+            <div class="stat-label">Matching search</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="controls">
+        <label class="field">
+          Search
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Try: 1977, Cornell, Fillmore East"
+          />
+        </label>
+        <label class="field">
+          Venue
+          <select id="venueFilter"></select>
+        </label>
+        <label class="field">
+          City
+          <select id="cityFilter"></select>
+        </label>
+        <label class="field">
+          State
+          <select id="stateFilter"></select>
+        </label>
+        <label class="field">
+          Tour
+          <select id="tourFilter"></select>
+        </label>
+        <label class="field">
+          Year
+          <select id="yearFilter"></select>
+        </label>
+        <label class="field">
+          Sort
+          <select id="sortFilter">
+            <option value="asc">Oldest to newest</option>
+            <option value="desc">Newest to oldest</option>
+          </select>
+        </label>
+        <button class="clear-button" type="button" id="clearFilters">
+          Clear all
+        </button>
+      </section>
+
+      <section class="timeline" id="showList"></section>
+    </main>
+
+    <template id="showCardTemplate">
+      <article class="show-card">
+        <div class="show-date"></div>
+        <button class="show-venue" type="button"></button>
+        <button class="show-tour" type="button"></button>
+        <div class="location-row">
+          <button class="show-city" type="button"></button>
+          <button class="show-state" type="button"></button>
+        </div>
+        <div class="show-setlist"></div>
+        <div class="show-releases">
+          <div class="release-badges"></div>
+          <div class="release-art"></div>
+        </div>
+        <button class="setlist-button" type="button">View setlist</button>
+      </article>
+    </template>
+
+    <div class="modal" id="setlistModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-card" role="dialog" aria-modal="true">
+        <div class="modal-header">
+          <div>
+            <div class="modal-title" id="modalTitle">Setlist</div>
+            <div class="modal-subtitle" id="modalSubtitle"></div>
+          </div>
+          <button class="modal-close" type="button" data-close="true">
+            Close
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="data/shows.js"></script>
+    <script src="data/releases.js"></script>
+    <script src="data/links.js"></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
